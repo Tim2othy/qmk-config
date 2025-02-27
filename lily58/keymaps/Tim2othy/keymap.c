@@ -27,10 +27,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
 
      [_QWERTY] = LAYOUT(
-      KC_ESC,   DE_2,   DE_1,    DE_6,    DE_4,    DE_6,                     DE_9,    DE_8,    DE_5,    DE_4,    DE_0,    KC_GRV,
-      KC_TAB,   DE_UDIA,DE_W,    DE_E,    DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,    DE_SS,
-      KC_LCTL,  DE_A,   DE_O,    DE_J,    DE_K,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
-      KC_LSFT,  DE_ODIA,DE_Q,    DE_E,    DE_I,    DE_X, KC_LBRC,  KC_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,  DE_SLSH,  KC_RSFT,
+      KC_ESC,   DE_1,   DE_2,    DE_3,    DE_4,    DE_5,                     DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_GRV,
+      KC_TAB,   DE_UDIA,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,    DE_SS,
+      KC_LCTL,  DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
+      KC_LSFT,  DE_ODIA,DE_Q,    DE_J,    DE_K,    DE_X, KC_LBRC,  KC_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  KC_RSFT,
                             KC_LALT, KC_LGUI, MO(_LOWER), KC_ENT,  KC_SPC, MO(_RAISE), KC_BSPC, KC_RGUI
     ),
          /* LOWER
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          [_LOWER] = LAYOUT(
            _______, _______, _______, _______, _______, _______,                   _______, _______, _______,_______, _______, _______,
            KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-           KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TILD,
+           KC_GRV, KC_EXLM, DE_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TILD,
            _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
                                       _______, _______, _______, _______, _______,  _______, _______, _______
          ),
