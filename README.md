@@ -39,3 +39,34 @@ ab;nrcde;nf;;efghi';'';mnorxr;tnu.123456890`xbbxxiii
 ggg7777777888990aaoei;nrdqwezrtcg12340987561234567890àoeigctzzaxcdv;n/m
 
 iiiiivvvvvvvvvvvvcccccccvvvvcvee bbbbbbbbbbbbbbbbbxxxxccccccceeeeeeeeeeeeeeeeeeeeeeeeccvvi
+
+
+
+# Problems and Updates
+
+
+## After latest update
+
+It seems to all work quite well now although there are, of course, many things that I am not used to yet.
+
+For now I think my main confusion is the cont and the shift buttons.
+
+I have shift above cont as I am used to, but now I have shift on the same hight as a normally it was one below and cont is 2 below. So all the time I want to press shift and i accidentally press cont.
+
+But I think the reverse doesn't havppen as one would expect.
+
+Ok.lr
+
+
+
+havpp8en
+
+
+copy and paste are intuitive. And i will aprobably get used to the whole shiftc contn thing fairly quickly.
+
+
+The second thing is space and backspace.
+
+So space makes sense.87978998nnn7
+
+But when I want To use backspace it s a bit confusing.
