@@ -1,6 +1,17 @@
-# How to update the layout
+# Basics
 
-Edit the `c` in this repository. Then copy it over to the folder and replace the previous version.
+## Layout
+
+We have
+
+- `test.txt` where one can test what your layout can do
+- `Tim2othy\keymap.c` The main file you want to edit
+- `default\keymap.c` The default keymap
+- `link-actual-c-file.lnk` the link to the folder where the `c` file that you compile has to go.
+
+## How to update the layout
+
+Edit `Tim2othy\keymap.c`. Then copy it over to this `link-actual-c-file.lnk` folder and replace the previous version.
 
 Then using the terminal QMK MSYS, compile the file and flash it at the same time by entering `qmk flash`, and pressing the activating button on the keyboard.
 
@@ -12,12 +23,13 @@ Then using the terminal QMK MSYS, compile the file and flash it at the same time
 
 # Problems and Updates
 
-## After latest update
+## 28/02/2025
 
 - Works quite well
 
-- Main confusion is the `ctrl` with and `shift`
-    - I have `shift` above `ctrl` as I am used to, but now I have `shift` on the same hight as a normally it was one below and cont is 2 below. So all the time I want to press `shift` and i accidentally press `ctrl`.
+- Main confusion is `ctrl` and `shift`
+    - I have `shift` above `ctrl` as I am used to, but now I have `shift` on the same hight as `a`, prevously it was one below and `ctrl` was 2 below.
+    - So, sometimes when I want to press `shift` I accidentally press `ctrl`.
 
 - The second thing is space and backspace
     - I sometimes get them confused
