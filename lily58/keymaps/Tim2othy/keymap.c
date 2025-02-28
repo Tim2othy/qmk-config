@@ -13,25 +13,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Dvorak
      * ,-----------------------------------------.                    ,-----------------------------------------.
-     * | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |      |
+     * | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  ß   |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-     * | Tab  |   Ü  |      |      |   P  |   Y  |                    |   F  |   G  |   C  |   T  |   Z  |      |
+     * | Tab  |   Ü  |  ,   |  .   |   P  |   Y  |                    |   F  |   G  |   C  |   T  |   Z  |   /  |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-     * |LCTRL |   A  |   O  |   E  |   I  |   U  |-------.    ,-------|   H  |   D  |   R  |   N  |   S  |  L   |
+     * |LShift|   A  |   O  |   E  |   I  |   U  |-------.    ,-------|   H  |   D  |   R  |  N   |   S  |  L   |
      * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
-     * |LShift|   Ö  |   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |      |RShift|
+     * |LCTRL|   Ö  |   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |   #  |   _   |
      * `-----------------------------------------/       /     \      \-----------------------------------------'
-     *                   | LAlt | LGUI |LOWER | /Enter  /       \Space \  |RAISE |BackSP| RGUI |
+     *                   | Wndws| LAlt |LOWER | /Enter  /       \Space \  |BackSP |RAISE|   +  |
      *                   |      |      |      |/       /         \      \ |      |      |      |
      *                   `----------------------------'           '------''--------------------'
      */
 
      [_QWERTY] = LAYOUT(
-      KC_ESC,   DE_1,   DE_2,    DE_3,    DE_4,    DE_5,                     DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_GRV,
-      KC_TAB,   DE_UDIA,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,    DE_SS,
-      KC_LCTL,  DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
-      KC_LSFT,  DE_ODIA,DE_Q,    DE_J,    DE_K,    DE_X, KC_LBRC,  KC_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  KC_RSFT,
-                            KC_LALT, KC_LGUI, MO(_LOWER), KC_ENT,  KC_SPC, MO(_RAISE), KC_BSPC, KC_RGUI
+      KC_ESC,   DE_1,   DE_2,    DE_3,    DE_4,    DE_5,                     DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    DE_SS,
+      KC_TAB,   DE_UDIA,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,    DE_SLSH,
+      KC_LSFT,  DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
+      KC_LCTL,  DE_ODIA,DE_Q,    DE_J,    DE_K,    DE_X, KC_LBRC,  KC_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  DE_UNDS,
+                            KC_LGUI, KC_LALT , MO(_LOWER), KC_ENT,  KC_SPC, KC_BSPC, MO(_RAISE), DE_PLUS
     ),
          /* LOWER
           * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
           * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  | F10  | F11  | F12  |
           * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-          * |   `  |   !  |   @  |   #  |   $  |   %  |-------.    ,-------|   ^  |   &  |   *  |   (  |   )  |   -  |
+          * |  (`) |   !  |   @  |  (#) |   $  |   %  |-------.    ,-------|   ^  |   &  |   *  |   (  |   )  |   -  |
           * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
           * |      |      |      |      |      |      |-------|    |-------|      |   _  |   +  |   {  |   }  |   |  |
           * `-----------------------------------------/       /     \      \-----------------------------------------'
