@@ -1,6 +1,14 @@
-flash usw wie gewohnt, kopiere die .c datei in den qmk ordner von hier
+# How to update the layout
 
-das problem vorhin war das mit master left oder right
+Edit the `c` in this repository. Then copy it over to the folder and replace the previous version.
+
+Then using the terminal QMK MSYS, compile the file and flash it at the same time by entering `qmk flash`, and pressing the activating button on the keyboard.
+
+## Debugging
+
+- If everything is seemingly working but nothing happens after flashing the keyboard:
+    - Checheck if `#define MASTER_RIGHT` is missing or commented out from `config.h` if yes add that line back in.
+
 
 
 
