@@ -1,4 +1,4 @@
-#include QMK_KEYBOARD_H       /*  This is the right place*/
+#include QMK_KEYBOARD_H
 #include "keymap_german.h"
 #include "sendstring_german.h"
 
@@ -8,6 +8,11 @@ enum layer_number {
     _RAISE,
     _ADJUST,
 };
+
+    /* The fist is your Main layout what you get without changing the layer
+     * then we have the lower, and raised layers
+     * and the 4. isn't being used at the moment.
+     */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
