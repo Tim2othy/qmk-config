@@ -1,18 +1,19 @@
-
---- Alphabet ---
-
-abcdefghijklmnopqrstuvwxyz
-
-
---- Sentence ---
-
-three quick foxes jumped over a brown lazy giant
-three quick foxes jumped over a brown lazy giant
-three quickkkk
-three quick fojes jumped over a brown lazy giant
-three quick fojes  jumped over a brown lazy giant
-jumped over a ju
-three quick
-three quick foxes jumped over a brown lazy giantll
-the quick brown fox jumpes over the brown lazy giantnl
-jumpes over the brown lazy giantll
+Three quick foxes; Alfred, Casuis, Pilar jumped over it.
+There 3 were 18 before, but then some left. 18 - 15 = 3.
+Ich (Sören) will, dass übermorgen alle anderen außer ihr Autos benutzen, oder?
+Hello_I_am_a_robot. This-is-a-branch%%
+Version /und\ "Zitat"
+{Fast ganz vergessen
+Viel $$
+5 < 6 + 1
+5 > 6 * 0.1
+Oder}
+I can use ```and``` or `me` etc.
+[Jest
+#this!
+'and this'
+Hier & dort]
+Für @
+Und €
+Nicht wichtig ^o^
+Maybe |
