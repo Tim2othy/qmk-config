@@ -24,9 +24,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
      * |  Ö   |   A  |   O  |   E  |   I  |   U  |-------.    ,-------|   H  |   D  |   R  |  N   |   S  |  L   |
      * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
-     * |LShift|LCTRL|   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |   #  |   -   |
+     * |LShift|LCTRL |   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |   #  |   -  |
      * `-----------------------------------------/       /     \      \-----------------------------------------'
-     *                   | Wndws| LAlt |LOWER | /Enter  /       \Space \  |BackSP |RAISE|   <  |
+     *                   | Wndws| LAlt |Space | /Enter  /       \LOWER \  |BackSP|RAISE |   <  |
      *                   |      |      |      |/       /         \      \ |      |      |      |
      *                   `----------------------------'           '------''--------------------'
      */
@@ -36,27 +36,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_TAB,   DE_UDIA,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,    KC_SLSH,
       DE_ODIA,  DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
       KC_LSFT,  KC_LCTL,DE_Q,    DE_J,    DE_K,    DE_X, DE_LBRC,  DE_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  DE_MINS,
-                            KC_LGUI, KC_LALT , MO(_LOWER), KC_ENT,  KC_SPC, KC_BSPC, MO(_RAISE), KC_LABK
+                            KC_LGUI, KC_LALT, KC_SPC,  KC_ENT,     MO(_LOWER), KC_BSPC, MO(_RAISE), KC_LABK
     ),
          /* LOWER
           * ,-----------------------------------------.                    ,-----------------------------------------.
           * |      |      |      |      |      |      |                    |      |      |  F9 |      |      |      |
           * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-          * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  Up  | F10  | F11  | F12  |
+          * |  F1  |  F2  |   7  |   8  |  9   |  F6  |                    |  F7  |  F8  |  Up  | F10  | F11  | F12  |
           * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-          * |  (`) |   !  |   @  |  (#) |   $  |   %  |-------.    ,-------|   ^  | Left | Down |Right |      |   -  |
+          * |  (`) |   0  |   4  |   5  |  6   |   %  |-------.    ,-------|   ^  | Left | Down |Right |      |   -  |
           * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
-          * |      |      |      |      |      |      |-------|    |-------|      |   _  |   +  |   {  |   }  |   |  |
+          * |      |      |   1  |   2  |   3  |      |-------|    |-------|      |   _  |   +  |   {  |   }  |   |  |
           * `-----------------------------------------/       /     \      \-----------------------------------------'
-          *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |BackSP| RGUI |
+          *                   | Wndws| LAlt |Space | /Enter  /       \LOWER \  |BackSP|RAISE | RGUI |
           *                   |      |      |      |/       /         \      \ |      |      |      |
           *                   `----------------------------'           '------''--------------------'
           */
          [_LOWER] = LAYOUT(
            _______, _______, _______, _______, _______, _______,                   _______, _______, KC_F9,   _______, _______, _______,
-           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_UP,   KC_F10,  KC_F11,  KC_F12,
-           KC_GRV, KC_EXLM, DE_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_LEFT,  KC_DOWN, KC_RGHT, KC_RPRN, KC_TILD,
-           _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
+           KC_F1,   KC_F2,   DE_7,    DE_8,    DE_9,    KC_F6,                     KC_F7,   KC_F8,   KC_UP,   KC_F10,  KC_F11,  KC_F12,
+           KC_GRV, DE_0,     DE_5,    DE_6,    DE_7,    KC_PERC,                   KC_CIRC, KC_LEFT, KC_DOWN, KC_RGHT, KC_RPRN, KC_TILD,
+           _______, _______, DE_1,    DE_2,    DE_3,    _______, _______, _______, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
                                       _______, _______, _______, _______, _______,  _______, _______, _______
          ),
          /* RAISE
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
           * |  F7  |  F8  |  F9  | F10  | F11  | F12  |-------|    |-------|   +  |   -  |   =  |   [  |   ]  |   \  |
           * `-----------------------------------------/       /     \      \-----------------------------------------'
-          *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |BackSP| RGUI |
+          *                   | Wndws| LAlt |Space | /Enter  /       \LOWER \  |BackSP|RAISE | RGUI |
           *                   |      |      |      |/       /         \      \ |      |      |      |
           *                   `----------------------------'           '------''--------------------'
           */
@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
           * |      |      |      |      |      |      |-------|    |-------|      |      | MODE | HUE- | SAT- | VAL- |
           * `-----------------------------------------/       /     \      \-----------------------------------------'
-          *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |BackSP| RGUI |
+          *                   | Wndws| LAlt |Space | /Enter  /       \LOWER \  |BackSP|RAISE | RGUI |
           *                   |      |      |      |/       /         \      \ |      |      |      |
           *                   `----------------------------'           '------''--------------------'
           */
