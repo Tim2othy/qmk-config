@@ -35,3 +35,7 @@ Then using the terminal QMK MSYS, compile the file and flash it at the same time
     - I sometimes get them confused
 
 - Copy and paste are intuitive
+
+## 08/04/2025
+
+Added numberpad to left side arrow layer. But messed up with some of the numbers. Lol, will fix later.
