@@ -20,23 +20,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-----------------------------------------.                    ,-----------------------------------------.
      * | ESC  |  F1  | F2   | F3   |  F4  |  F5  |                    |  F6  |  F7  |  F8  | F9   | F10  |  +   |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-     * | F11  │ENTER |  ,   |  .   |   P  |   Y  |                    |   F  |   G  |   C  |   T  |   Z  |   /  |
+     * | F11  │      |  ,   |  .   |   P  |   Y  |                    |   F  |   G  |   C  |   T  |   Z  │ENTER |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
      * | Tab  |   A  |   O  |   E  |   I  |   U  |-------.    ,-------|   H  |   D  |   R  |  N   |   S  |  L   |
      * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
      * |LShift|Wndws |   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |   #  |   -  |
      * `-----------------------------------------/       /     \      \-----------------------------------------'
-     *                   | LAlt | LCTRL|Space | /BackSP /       \LOWER \  |  ?   |  \   |   <   |
+     *                   | LAlt | LCTRL|      | /BackSP /       \Space \  | LOWER|  \   |   <  |
      *                   |      |      |      |/       /         \      \ |      |      |      |
      *                   `----------------------------'           '------''--------------------'
      */
 
      [_QWERTY] = LAYOUT(
       KC_ESC,   KC_F1,  KC_F2,   KC_F3,   KC_F4,   KC_F5,                    KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   DE_PLUS,
-      KC_F11,   KC_ENT, DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,    KC_SLSH,
+      KC_F11,   XXXXXXX,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,     KC_ENT,
       KC_TAB,   DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
       KC_LSFT,  KC_LGUI,DE_Q,    DE_J,    DE_K,    DE_X, DE_LBRC,  DE_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  DE_MINS,
-                            KC_LALT, KC_LCTL, KC_SPC,  KC_BSPC,     MO(_LOWER), DE_QUES, DE_BSLS, KC_LABK
+                            KC_LALT, KC_LCTL, XXXXXXX, KC_BSPC,     KC_SPC, MO(_LOWER), DE_BSLS, KC_LABK
     ),
          /* LOWER
           * ,-----------------------------------------.                    ,-----------------------------------------.
