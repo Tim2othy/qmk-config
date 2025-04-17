@@ -38,4 +38,15 @@ Then using the terminal QMK MSYS, compile the file and flash it at the same time
 
 ## 08/04/2025
 
-Added numberpad to left side arrow layer. But messed up with some of the numbers. Lol, will fix later.
+Added numberpad to left side arrow layer. But messed up with some of the numbers. Lol, will fix later
+
+
+
+
+# Knowledge
+
+
+The thing's I really know.
+
+- Space should be located where my right thumb can reach it
+- And Shift should stay in the bottom left corner.
