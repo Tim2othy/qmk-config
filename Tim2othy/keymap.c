@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
      * |LShift|Wndws |   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |   #  |   -  |
      * `-----------------------------------------/       /     \      \-----------------------------------------'
-     *                   | LAlt |  F13 | LCTRL| /BackSP /       \Space \  | LOWER| F14  |ENTER |
+     *                   | LAlt |  F13 | LCTRL| /BackSP /       \Space \  | LOWER| ENTER|  F14 |
      *                   |      |      |      |/       /         \      \ |      |      |      |
      *                   `----------------------------'           '------''--------------------'
      */
@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_F11,   DE_DQUO,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,     DE_SLSH,
       KC_TAB,   DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
       KC_LSFT,  KC_LGUI,DE_Q,    DE_J,    DE_K,    DE_X, DE_LPRN,  DE_RPRN,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  DE_MINS,
-                            KC_LALT, KC_F13,  KC_LCTL, KC_BSPC,     KC_SPC, MO(_LOWER), KC_F14, KC_ENT
+                            KC_LALT, KC_F13,  KC_LCTL, KC_BSPC,     KC_SPC, MO(_LOWER), KC_ENT, KC_F14
     ),
          /* LOWER
           * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
           * |LShift|Wndws |   1  |   2  |   3  |   {  |-------|    |-------|   }  |   ?  |  F15 |   ß  |  |   |   @  |
           * `-----------------------------------------/       /     \      \-----------------------------------------'
-          *                   | LAlt | F13  |LCTRL | /BackSP /       \Space \  | LOWER|  F14 | ENTER|
+          *                   | LAlt |  F13 | LCTRL| /BackSP /       \Space \  | LOWER| ENTER|  F14 |
           *                   |      |      |      |/       /         \      \ |      |      |      |
           *                   `----------------------------'           '------''--------------------'
           */
