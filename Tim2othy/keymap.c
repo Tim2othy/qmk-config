@@ -20,43 +20,43 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-----------------------------------------.                    ,-----------------------------------------.
      * | ESC  |  F1  | F2   | F3   |  F4  |  F5  |                    |  F6  |  F7  |  F8  | F9   | F10  |  +   |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-     * | F11  │      |  ,   |  .   |   P  |   Y  |                    |   F  |   G  |   C  |   T  |   Z  │ENTER |
+     * | F11  │   "  |  ,   |  .   |   P  |   Y  |                    |   F  |   G  |   C  |   T  |   Z  │  /   |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
      * | Tab  |   A  |   O  |   E  |   I  |   U  |-------.    ,-------|   H  |   D  |   R  |  N   |   S  |  L   |
-     * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
+     * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
      * |LShift|Wndws |   Q  |   J  |   K  |   X  |-------|    |-------|   B  |   M  |   W  |   V  |   #  |   -  |
      * `-----------------------------------------/       /     \      \-----------------------------------------'
-     *                   | LAlt | LCTRL|      | /BackSP /       \Space \  | LOWER|  \   |   <  |
+     *                   | LAlt |  F13 | LCTRL| /BackSP /       \Space \  | LOWER| F14  |ENTER |
      *                   |      |      |      |/       /         \      \ |      |      |      |
      *                   `----------------------------'           '------''--------------------'
      */
 
      [_QWERTY] = LAYOUT(
       KC_ESC,   KC_F1,  KC_F2,   KC_F3,   KC_F4,   KC_F5,                    KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   DE_PLUS,
-      KC_F11,   XXXXXXX,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,     KC_ENT,
+      KC_F11,   DE_DQUO,DE_COMM, DE_DOT,  DE_P,    DE_Y,                     DE_F,    DE_G,    DE_C,    DE_T,    DE_Z,     DE_SLSH,
       KC_TAB,   DE_A,   DE_O,    DE_E,    DE_I,    DE_U,                     DE_H,    DE_D,    DE_R,    DE_N,    DE_S,    DE_L,
-      KC_LSFT,  KC_LGUI,DE_Q,    DE_J,    DE_K,    DE_X, DE_LBRC,  DE_RBRC,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  DE_MINS,
-                            KC_LALT, KC_LCTL, XXXXXXX, KC_BSPC,     KC_SPC, MO(_LOWER), DE_BSLS, KC_LABK
+      KC_LSFT,  KC_LGUI,DE_Q,    DE_J,    DE_K,    DE_X, DE_LPRN,  DE_RPRN,  DE_B,    DE_M,    DE_W,    DE_V,    DE_HASH,  DE_MINS,
+                            KC_LALT, KC_F13,  KC_LCTL, KC_BSPC,     KC_SPC, MO(_LOWER), KC_F14, KC_ENT
     ),
          /* LOWER
           * ,-----------------------------------------.                    ,-----------------------------------------.
-          * |  ESC |  F1  | F2   | F3   |  F4  |  F5  |                    |  F6  |  F7  |  F8  | F9   | F10  |  +   |
+          * |  ESC |  Ä   |  Ö   |  Ü   |  F4  |  F5  |                    |  F6  |  F7  |  F8  | F9   | F10  |  F12 |
           * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-          * |      |      |   7  |   8  |  9   |      |                    |      |      |  Up  |      | F11  | F12  |
+          * |   €  |  $   |   7  |   8  |  9   |   %  |                    |   &  |   !  |  Up  |  °   |      |   \  |
           * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-          * |  (`) |   0  |   4  |   5  |  6   |   %  |-------.    ,-------|   ^  | Left | Down |Right |      |   -  |
+          * |   ^  |   0  |   4  |   5  |  6   |   <  |-------.    ,-------|   >  | Left | Down |Right |  =   |   ~  |
           * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
-          * |      |      |   1  |   2  |   3  |      |-------|    |-------|      |   _  |   +  |   {  |   }  |   |  |
+          * |LShift|Wndws |   1  |   2  |   3  |   {  |-------|    |-------|   }  |   ?  |  F15 |   ß  |  |   |   @  |
           * `-----------------------------------------/       /     \      \-----------------------------------------'
-          *                   | LAlt | LCTRL|Space | /BackSP /       \LOWER \  |  ?   |  \   |   <   |
+          *                   | LAlt | F13  |LCTRL | /BackSP /       \Space \  | LOWER|  F14 | ENTER|
           *                   |      |      |      |/       /         \      \ |      |      |      |
           *                   `----------------------------'           '------''--------------------'
           */
          [_LOWER] = LAYOUT(
-           _______, _______, _______, _______, _______, _______,                   _______, _______, _______,  _______, _______, _______,
-           XXXXXXX, XXXXXXX, DE_7,    DE_8,    DE_9,    XXXXXXX,                   XXXXXXX, XXXXXXX,   KC_UP, XXXXXXX,  KC_F11,  KC_F12,
-           KC_GRV,  DE_0,    DE_4,    DE_5,    DE_6,    KC_PERC,                   KC_CIRC, KC_LEFT, KC_DOWN, KC_RGHT, KC_RPRN, KC_TILD,
-           XXXXXXX, XXXXXXX, DE_1,    DE_2,    DE_3,    XXXXXXX, _______, _______, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
+           _______, DE_ADIA, DE_ODIA, DE_UDIA, _______, _______,                   _______, _______, _______,  _______, _______, KC_F12,
+           DE_EURO, DE_DLR,  DE_7,    DE_8,    DE_9,    DE_PERC,                   DE_AMPR, DE_EXLM,   KC_UP, DE_DEG,  XXXXXXX, DE_BSLS,
+           KC_GRV,  DE_0,    DE_4,    DE_5,    DE_6,    DE_LABK,                   DE_RABK, KC_LEFT, KC_DOWN, KC_RGHT, DE_EQL,  DE_TILD,
+           _______, _______, DE_1,    DE_2,    DE_3,    DE_LCBR, DE_LBRC, DE_RBRC, DE_RCBR, DE_QUES, KC_F15, DE_SS,   DE_PIPE, DE_AT,
                                       _______, _______, _______, _______, _______,  _______, _______, _______
          ),
          /* RAISE
