@@ -1,17 +1,18 @@
 # Good
 
 three quick foxes jumped over a lazy brown giant
+There were 18 before, but then some left. 18 - 15 = 3.
+Three quick foxes; Alfred, Casius, Pilar jumped over it.
+"Zitat"
 
 
 # Hard
 
-Three quick foxes; Alfred, Casuis, Pilar jumped over it.
 Viel $$
 There were 18 before, but then some left. 18 - 15 = 3.
 #this!
-"Zitat"
 Hello_I_am_a_robot. This-is-a-branch%%
-
+Ich (Sören) will, dass übermorgen alle anderen außer ihr Autos benutzen, oder?
 
 # Possible but not in VS code
 5 < 6 + 1
@@ -21,7 +22,6 @@ Hello_I_am_a_robot. This-is-a-branch%%
 
 # Impossible
 
-Ich (Sören) will, dass übermorgen alle anderen außer ihr Autos benutzen, oder?
 Version /und\
 
 
